@@ -1,0 +1,55 @@
+@import "@/app/styles/variables.scss";
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 21px; /* Отступ между иконкой и текстом */
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.white {
+  border: 1px solid #c6c6bd;
+  background-color: transparent;
+  padding: 33px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 93px;
+}
+
+.black {
+  background-color: $mainTextColor;
+}
+
+.blackText {
+  color: $mainTextColor;
+}
+
+.whiteText {
+  color: $secondaryTextColor;
+}
+
+.s {
+  height: 74px;
+  padding: 21px 47px 21px 40px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.m {
+  height: 98px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}

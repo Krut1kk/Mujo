@@ -1,0 +1,57 @@
+@import "@/app/styles/variables.scss";
+.TestimonialsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  color: $mainTextColor;
+  text-align: center;
+
+  max-width: 2187px;
+  padding: 280px 0px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 56px;
+  margin-bottom: 94px;
+}
+
+@media (max-width: 1600px) {
+  .TestimonialsSection {
+    max-width: 1440px;
+    padding: 160px 0px;
+  }
+  .wrapper {
+    max-width: 1200px;
+  }
+  .title {
+    font-size: 32px;
+    margin-bottom: 94px;
+  }
+}
+@media (max-width: 1200px) {
+  .TestimonialsSection {
+    max-width: 1200px;
+    padding: 150px 0px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    max-width: 900px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 800px) {
+  .TestimonialsSection {
+    max-width: 375px;
+    padding: 100px 0px;
+  }
+  .wrapper {
+    max-width: 315px;
+  }
+}

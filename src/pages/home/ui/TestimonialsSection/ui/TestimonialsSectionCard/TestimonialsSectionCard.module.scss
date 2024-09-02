@@ -1,0 +1,81 @@
+@import "@/app/styles/variables.scss";
+
+.TestimonialsSectionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+
+  max-width: 530px;
+  height: 318px;
+  text-align: center;
+  color: $mainTextColor;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.star {
+  font-size: 24px;
+  color: $mainTextColor;
+}
+.text {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+}
+.client {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.clientName {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+}
+.clientImage {
+  height: 84px;
+  width: 84px;
+}
+@media (max-width: 1600px) {
+  .TestimonialsSectionCard {
+    gap: 24px;
+    max-width: 333px;
+    height: 158px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .clientName {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .clientImage {
+    height: 48px;
+    width: 48px;
+  }
+}
+@media (max-width: 1200px) {
+  .TestimonialsSectionCard {
+    gap: 18px;
+    max-width: 250px;
+    height: 130px;
+  }
+  .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .clientName {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .clientImage {
+    height: 40px;
+    width: 40px;
+  }
+}

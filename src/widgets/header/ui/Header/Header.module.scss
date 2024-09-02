@@ -1,0 +1,109 @@
+@import "@/app/styles/variables.scss";
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 105px;
+
+  border-bottom: 1px solid #e2e2e2;
+  height: 140px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.navLeft {
+  display: flex;
+  gap: 105px;
+  a {
+    text-decoration: none;
+    color: $mainTextColor;
+    white-space: nowrap;
+  }
+}
+
+.navRight {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $mainTextColor;
+  }
+}
+
+.logo {
+  cursor: pointer;
+
+  @media (max-width: 1440px) {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger span {
+  width: 26px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
+}
+
+@media (max-width: 1400px) {
+  .Header {
+    padding: 0 60px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .navLeft {
+    gap: 60px;
+  }
+  .navRight {
+    gap: 32px;
+  }
+}
+@media (max-width: 990px) {
+  .Header {
+    padding: 0 40px;
+    height: 60px;
+    font-size: 12px;
+  }
+
+  .navLeft {
+    gap: 30px;
+  }
+  .navRight {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 790px) {
+  .Header {
+    padding: 0 30px;
+    height: 72px;
+    font-size: 12px;
+  }
+  .navLeft {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}

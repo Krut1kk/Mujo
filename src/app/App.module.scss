@@ -1,0 +1,8 @@
+@import "@/app/styles/variables.scss";
+.App {
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Faktum", sans-serif;
+  background-color: $secondaryTextColor;
+}

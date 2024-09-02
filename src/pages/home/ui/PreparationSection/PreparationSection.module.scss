@@ -1,0 +1,107 @@
+@import "@/app/styles/variables.scss";
+.PreparationSection {
+  height: 945px;
+}
+.sect {
+  display: flex;
+
+  align-items: center;
+  gap: 223px;
+  margin-left: 105px;
+}
+.left {
+  width: 100%;
+  max-width: 1141px;
+}
+.right {
+  max-width: 700px;
+}
+.title {
+  font-weight: 800;
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 49px;
+  padding-bottom: 42px;
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  padding-bottom: 70px;
+}
+@media (max-width: 1920px) {
+  .PreparationSection {
+    height: 540px;
+  }
+  .sect {
+    gap: 127px;
+    margin-left: 60px;
+  }
+  .left {
+    max-width: 652px;
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    max-width: 400px;
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 32px;
+
+    line-height: 28px;
+    padding-bottom: 24px;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .PreparationSection {
+    height: 593px;
+  }
+  .sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    margin-left: 0px;
+  }
+  .left {
+    text-align: left;
+    max-width: 452px;
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    max-width: 400px;
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 24px;
+
+    line-height: 28px;
+    padding-bottom: 24px;
+  }
+  .subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .left {
+    max-width: 315px;
+    height: 260px;
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    max-width: 315px;
+  }
+}
